@@ -1,0 +1,11 @@
+C:\Visual Studio Projects\ExcelToSql\ExcelToSql\bin\Debug\ExcelToSql.exe.config
+C:\Visual Studio Projects\ExcelToSql\ExcelToSql\bin\Debug\ExcelToSql.exe
+C:\Visual Studio Projects\ExcelToSql\ExcelToSql\bin\Debug\ExcelToSql.pdb
+C:\Visual Studio Projects\ExcelToSql\ExcelToSql\obj\Debug\ExcelToSql.csprojResolveAssemblyReference.cache
+C:\Visual Studio Projects\ExcelToSql\ExcelToSql\obj\Debug\ExcelToSql.Properties.Resources.resources
+C:\Visual Studio Projects\ExcelToSql\ExcelToSql\obj\Debug\ExcelToSql.csproj.GenerateResource.Cache
+C:\Visual Studio Projects\ExcelToSql\ExcelToSql\obj\Debug\ExcelToSql.exe
+C:\Visual Studio Projects\ExcelToSql\ExcelToSql\obj\Debug\ExcelToSql.pdb
+C:\Visual Studio Projects\ExcelToSql\ExcelToSql\bin\Debug\LocalTestDb.mdf
+C:\Visual Studio Projects\ExcelToSql\ExcelToSql\bin\Debug\LocalTestDb_log.ldf
+C:\Visual Studio Projects\ExcelToSql\ExcelToSql\obj\Debug\ExcelToSql.MainPage.resources
