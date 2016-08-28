@@ -31,7 +31,7 @@
             this.statusTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.browserButton = new System.Windows.Forms.Button();
+            this.browseButton = new System.Windows.Forms.Button();
             this.uploadButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -68,15 +68,15 @@
             this.label2.Text = "Status:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // browserButton
+            // browseButton
             // 
-            this.browserButton.Location = new System.Drawing.Point(17, 124);
-            this.browserButton.Name = "browserButton";
-            this.browserButton.Size = new System.Drawing.Size(75, 28);
-            this.browserButton.TabIndex = 3;
-            this.browserButton.Text = "Browse";
-            this.browserButton.UseVisualStyleBackColor = true;
-            this.browserButton.Click += new System.EventHandler(this.browserButton_Click);
+            this.browseButton.Location = new System.Drawing.Point(17, 124);
+            this.browseButton.Name = "browseButton";
+            this.browseButton.Size = new System.Drawing.Size(75, 28);
+            this.browseButton.TabIndex = 3;
+            this.browseButton.Text = "Browse";
+            this.browseButton.UseVisualStyleBackColor = true;
+            this.browseButton.Click += new System.EventHandler(this.browserButton_Click);
             // 
             // uploadButton
             // 
@@ -124,7 +124,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.uploadButton);
-            this.Controls.Add(this.browserButton);
+            this.Controls.Add(this.browseButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.statusTextBox);
@@ -141,7 +141,7 @@
         private System.Windows.Forms.TextBox statusTextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button browserButton;
+        private System.Windows.Forms.Button browseButton;
         private System.Windows.Forms.Button uploadButton;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
