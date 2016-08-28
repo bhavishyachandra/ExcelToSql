@@ -18,11 +18,16 @@ namespace ExcelToSql
     {
         private readonly string _connectionString;
         private string _selectedPath;
+        private string _excelQuery;
+        private string _destinationTable;
 
         public MainPage()
         {
             InitializeComponent();
-            _connectionString = ConfigurationManager.ConnectionStrings["destinationDatabaseConnectionString"].ConnectionString;
+            //_connectionString = ConfigurationManager.ConnectionStrings["destinationDatabaseConnectionString"].ConnectionString;
+            _connectionString = ConfigProvider.ConnectionString;
+            _excelQuery = ConfigProvider.ExcelQuery;
+            _destinationTable = ConfigProvider.DestinationTable;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -61,13 +66,13 @@ namespace ExcelToSql
                     excelConnection.Open();
                     var dtSchema = excelConnection.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, new object[] { null, null, null, "TABLE" });
                     var sheet1 = dtSchema.Rows[0].Field<string>("TABLE_NAME");
-                    using (OleDbCommand cmd = new OleDbCommand(ConfigurationManager.AppSettings["excelQuery"] + "[" + sheet1 + "]", excelConnection))
+                    using (OleDbCommand cmd = new OleDbCommand(_excelQuery + "[" + sheet1 + "]", excelConnection))
                     {
                         using (OleDbDataReader dReader = cmd.ExecuteReader())
                         {
                             using (SqlBulkCopy sqlBulk = new SqlBulkCopy(_connectionString))
                             {
-                                sqlBulk.DestinationTableName = ConfigurationManager.AppSettings["destinationTable"];
+                                sqlBulk.DestinationTableName = _destinationTable;
                                 if (dReader != null) sqlBulk.WriteToServer(dReader);
                             }
                         }
